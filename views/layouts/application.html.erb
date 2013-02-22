@@ -1,10 +1,16 @@
+<%
+  def link_to(name, url)
+      return "<a href='#{url}'>#{name}</a>"
+   end
+  %>
+
 <html>
   <body>
     <h1>You're using a layout</h1>
     <p>
       <h3> I'm a header</h3>
       <p><ol>
-		  <li><a href="http://google.com">This is a link to google</a></li>
+		  <li><%= link_to('This is a link to yahoo', 'http://yahoo.com') %></li>
 		  <li><a href="http://google.com">This is a link to google</a></li></p>
       <a href='me.html'>Me</a>
 
@@ -16,7 +22,7 @@
     <hr />
     <div>
       <h3> I'm a footer</h3>
-      <p> <li><a href="http://google.com">This is a link to google</a></li>
+      <p> <li>  <%= link_to('This is a link to yahoo created with the link_to method', 'http://yahoo.com') %></li>
 		  <li><a href="http://google.com">This is a link to google</a></li></p>
     </div>
   </body>
