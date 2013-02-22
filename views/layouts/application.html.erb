@@ -1,3 +1,4 @@
+
 <%
   def link_to(name, url)
       return "<a href='#{url}'>#{name}</a>"
@@ -13,7 +14,7 @@
 		  <li><%= link_to('This is a link to yahoo', 'http://yahoo.com') %></li>
 		  <li><a href="http://google.com">This is a link to google</a></li></p>
       <a href='me.html'>Me</a>
-
+	  <%= @request.query.inspect %>
     </p>
     <hr />
     <div>
